@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>portfolió weboldal</title>
+    <link rel="stylesheet" href="prortfolió_style.css">
+</head>
+<body>
+
+<nav>
+    <a href="#" onclick="showPage(1)">kezdölap</a>
+    <a href="#" onclick="showPage(2)">eletronika</a>
+    <a href="#" onclick="showPage(3)">mikrovezérlő programozás</a>
+    <a href="#" onclick="showPage(4)">programozás alapjai</a>
+    <a href="#" onclick="showPage(5)">digitális áramkörök</a>
+    <a href="#" onclick="showPage(6)">adatbáziskezelés alapjai</a>
+    <a href="#" onclick="showPage(7)">hálozat kezelés</a>
+    <a href="#" onclick="showPage(8)">PLC programozás</a>
+    <a href="#" onclick="showPage(9)">számitogépes simuláció</a>
+    <a href="#" onclick="showPage(10)">önéletrajz</a>
+    <a href="#" onclick="showPage(11)">IoT</a>
+    <a href="#" onclick="showPage(12)">programfejlesztés</a>
+	<a href="#" onclick="showPage(13)">Robottechnika CAD/CAM</a>
+</nav>
+
+<section id="page1" class="active"><h1>1. oldal</h1></section>
+<section id="page2"><h1>2. oldal</h1></section>
+<section id="page3"><h1>3. oldal</h1></section>
+<section id="page4"><h1>4. oldal</h1></section>
+<section id="page5"><h1>5. oldal</h1></section>
+<section id="page6"><h1>6. oldal</h1></section>
+<section id="page7"><h1>7. oldal</h1></section>
+<section id="page8"><h1>8. oldal</h1></section>
+<section id="page9"><h1>9. oldal</h1></section>
+<section id="page10"><h1>10. oldal</h1></section>
+<section id="page11"><h1>11. oldal</h1></section>
+<section id="page12"><h1>12. oldal</h1></section>
+<section id="page13"><h1>13. oldal</h1></section>
+
+<script>
+function showPage(n) {
+    let pages = document.querySelectorAll('section');
+    pages.forEach(p => p.classList.remove('active'));
+    document.getElementById('page' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>
